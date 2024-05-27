@@ -1,0 +1,25 @@
+Vivek Kondapalli - 05/26/2024
+
+The program has a list of words commonly associated with spam messages and crosschecks various email messages for spam using the list of phrases associated with spam mail. The more words or phrases associated with spam the harsher it will be rated.
+
+Variables used:
+spam_score
+words_spam
+spam_likelihood
+spam_keywords
+lower_message
+calculate_spam_score(message)
+
+Functions created:
+calculate_spam_score(message)
+main
+
+Program steps:
+1. The program has a list of common keywords associated with spam, and converts the string the user enters to lower case to 100% match the keywords created to determine if the message contains any spam content.
+2. The function calculate_spam_score(message) initializes spam score to zero and creates and empty array for words spam.
+3. The for loop in lines 18-21 checks the string the user entered and compares it to the list of keywords associated with spam. If keywords are detected, the counter keeping track of spam score increases by 1 accordingly.
+4. Lines 24-31 checks the spam score associated with the string and if less than or equal to 5 designates the spam as low, 6 to 15 is medium, and over 15 is high and returns the spam score, spam words and spam likelihood.
+5. The Main function prints two introductory lines to the spam detector then asks the user for an email input to determine if spam.
+6. In line 41 the function calls calculate_spam_score(message) calculates spam score then displays the message.
+7. The program finally prints the spam score, the likelihood of the email being spam, and the words and phrases considers spam then calls the main function.
+
