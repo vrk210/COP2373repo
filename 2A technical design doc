@@ -1,3 +1,4 @@
+
 Vivek Kondapalli - 05/26/2024
 
 The program has a list of words commonly associated with spam messages and crosschecks various email messages for spam using the list of phrases associated with spam mail. The more words or phrases associated with spam the harsher it will be rated.
@@ -22,4 +23,6 @@ Program steps:
 5. The Main function prints two introductory lines to the spam detector then asks the user for an email input to determine if spam.
 6. In line 41 the function calls calculate_spam_score(message) calculates spam score then displays the message.
 7. The program finally prints the spam score, the likelihood of the email being spam, and the words and phrases considers spam then calls the main function.
+
+Repository link: https://github.com/vrk210/COP2373repo
 
