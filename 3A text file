@@ -1,0 +1,29 @@
+Vivek Kondapalli - 06/2/2024
+
+This program takes a list of expenses from the user, then analyzes and displays the total amount expended, then tells the user the highest expense and the lowest expense, and what expense they were specifically.
+
+Variables used:
+expenses
+expense_type
+expense_amount
+total_expense
+highest_expense
+lowest_expense
+highest_expense_type
+lowest_expense_type
+
+Functions Created:
+get_expense
+calculate_expense_total
+analyze_expenses
+main
+
+Program steps:
+1. get_expenses prompts the user to input their expense amount and types, where each expense is stored as a tuple in a list.
+2.calculate_expense_total uses reduce to calculate total,lowest, and highest expenses
+3. total_expense is calculated by adding all the individual expenses within calculate_expense_total
+4. Highest and lowest expenses are calculated using reduce, max, and min with a range from -inf to inf
+3. analyze_expenses calls calculate_expense_total and finds the types of expenses that correlates to the highest and lowest expense, then prints them along with their types.
+4.Main calls get expenses to get the list than analyze expenses to analyze and print the results.
+
+Repository Link: https://github.com/vrk210/COP2373repo
