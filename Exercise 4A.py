@@ -1,5 +1,15 @@
 import time
 
+def make_timer(func):
+    def wrapper(*args, **kwargs):
+        t1 = time.time()
+        ret_val = func(*args, **kwargs)
+        t2 = time.time()
+        print('Time elapsed was', t2 - t1)
+        return ret_val
+    return wrapper
+
+@make_timer
 def calculate_spam_score(message):
     spam_keywords = [
         "free", "cash", "0% down", "cash back", "act now",
@@ -39,23 +49,13 @@ def main():
     # Gets email from user
     message = input("Enter the email: ")
 
-    # Start timer
-    start_time = time.time()
-
     # Calculates the spam score
     spam_score, spam_likelihood, words_spam = calculate_spam_score(message)
-
-    # Stop timer
-    end_time = time.time()
 
     # Displays the results
     print("\nSpam Score:", spam_score)
     print("Likelihood that this message is spam:", spam_likelihood)
     print("Words/Phrases that caused this message to be considered spam:", words_spam)
-
-    # Display runtime
-    runtime = end_time - start_time
-    print(f"Runtime: {runtime:.4f} seconds")
 
 if __name__ == "__main__":
     main()
