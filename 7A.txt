@@ -1,0 +1,20 @@
+Vivek Kondapalli 6-23-2024
+
+This program prompts the user to enter one or multiple sentences, then displays each individual sentence and the total number of sentences.
+
+Variables Used:
+pattern
+sentences
+text
+
+Functions created:
+extract_sentences
+main
+
+Program Steps:
+1. The program prompts the user to enter one or more sentences.
+2. The program then runs extract sentences which first matches any uppercase letter or digit then any period, exclamation, or question mark indicating the end of a sentence, then ensures the sentence ends with a space followed by an uppercase letter or digit or the end of the input.
+3. Then the program runs re.findall to find the function with the pattern to all given sentences
+4. The function then prints each extracted sentence with its index and the total number of sentences.
+
+GitHub repo link: https://github.com/vrk210/COP2373repo
