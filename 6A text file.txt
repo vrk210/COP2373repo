@@ -1,0 +1,25 @@
+Vivek Kondapalli 6-23-2024
+
+This program prompts the user to enter a phone number, SSN, and a zip code. The program then takes the input and checks it against a few valid, normally used formats and prints whether the user entered responses matches the given formats.
+
+Variables Used:
+pattern
+phone_number
+ssn
+zip_code
+
+Functions Created:
+validate_phone_number
+validate_ssn
+validate_zip_code
+main
+
+Program Steps:
+1. The program prompts the user for a phone number, SSN, and zip code.
+2. The program then runs validate_phone_number, comparing the user entered phone number to the given common formats of phone numbers and converts the either successful or unsuccessful match to a Boolean value, and prints either "The phone number is valid" or "The phone number is invalid" depending on whether the Boolean returns true or false.
+3. The program then runs validate_ssn, comparing the user entered SSN to the given format of SSNs and converts the either successful or unsuccessful match to a Boolean value, prints either "The social security number is valid" or "The social security number is invalid" depending on whether the Boolean returns true or false.
+4. The program then runs validate_zip_code, comparing the user entered zip code to the given format of zip codes and converts the either successful or unsuccessful match to a Boolean value, prints either "The zip code is valid" or "The zip code is invalid" depending on whether the Boolean returns true or false.
+5. Main is then called to execute each function and print the corresponding results.
+
+GitHub repo link: https://github.com/vrk210/COP2373repo
+
