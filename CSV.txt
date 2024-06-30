@@ -1,0 +1,23 @@
+Vivek Kondapalli 6-30-2024
+
+This program allows an instructor to enter information (first name, last name, exam grades) into a file then will display data into a tabular format using another file.
+
+Variables Created:
+num_students
+writer
+first_name
+last_name
+exam(n)
+
+Functions Created:
+read_grades_from_csv
+write_grades_from_csv
+
+Program Steps:
+1. Write_grades_to_csv first prompts the user for a numer of students, collecting first and last names and exam grades.
+2. It uses csv.writer to write the data into grades.csv
+3. It prints a confirmation message.
+4. Read_grades_from_csv opens grades.csv and uses csv.reader to read contents, printing each header row first then iterates through each row to display the table.
+
+GitHub repo link: https://github.com/vrk210/COP2373repo
+
