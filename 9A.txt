@@ -1,0 +1,29 @@
+Vivek Kondapalli 7-7-2024
+
+This program allows the user to enter a name, account number, amount and interest rate and displays balances and interest amounts.
+
+Variables Created:
+self.name
+self.account_number
+self.amount
+self.interest_rate
+account
+balance
+interest
+
+Functions created:
+__init__(self, name, account_number, amount, interest_rate)
+adjust_interest_rate(self, new_rate)
+withdraw(self, amount)
+deposit(self, amount)
+get_balance(self)
+calculate_interest(self, days)
+__str__(self)
+test_bank_acct()
+
+Program Steps:
+1.The program initializes a class 'BankAcct' with the account holder's name account number and balance and interest rate.
+2.The class adjusts the interest rate, withdraws and deposits funds, gets the current balance and calculates interest.
+3.The program then runs 'test_bank_acc' creating an instance of a bank account class and tests its methods printing the according results.
+
+GitHub repo link: https://github.com/vrk210/COP2373repo
