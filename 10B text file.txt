@@ -1,0 +1,33 @@
+Vivek Kondapalli 7-14-2024
+
+This program allows the user to enter a name, account number, amount, and interest rate, and will output the balances and interest amount.
+
+Variables Created:
+self.amount
+self.name
+self.account_number
+self.interest_rate
+account
+balance
+interest
+
+Functions Created:
+__init__(self, amount =0.0)
+__init__(self,  name, account_number, amount, interest rate)
+add(self, amount)
+subtract(self, amount)
+adjust_interest_rate(self, new_rate)
+get_balance(self)
+calculate_interest(self, days)
+__str__(self)
+test_bank_acct()
+
+Program Steps:
+The Program creates a class ‘Money’ which initializes an instance of money with optional amount and sets self.amount to amount. Then adds give amount to self.amount and subtracts given amount from self.amount if amount > self.amount.
+The program then uses a class called ‘Bank Acct’ inheriting from money the add and subtract functions adding specific functions that manage a bank acct using ‘adjust_interest_rate’, ‘get_balance’, and ‘calculate_interest’.
+The program then runs test_bank_acc() to use these functionalities, creating an instance of a bank account class and testing the methods printing the according results.
+
+
+GitHub Repo Link: https://github.com/vrk210/COP2373repo
+
+
