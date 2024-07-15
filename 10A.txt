@@ -1,0 +1,28 @@
+Vivek Kondapalli 7-14-24
+
+This program builds on section 10.12's code for "money and inheritance" implementing a class money that applies multiplication, subtraction, and addition to a given amount of money and tests the class.
+
+Variables Created:
+amount
+self.amount
+m1
+m2
+m3
+
+Functions Created:
+__init__(self, amount: float)
+__add__(self, other)
+__sub__(self, other)
+__mul__(self, other)
+__rmul__(self, other)
+__eq__(self, other)
+__str__(self)
+__repr__(self)
+test_money_operations()
+
+Program Steps:
+1. The program creates a class 'money' with an amount parameter, and creates the addition, subtraction, multiplication, and 'rmul' that calls the mul method to work both ways, defining eq to compare money with the other object and provides a string representation of money, then adds the 'repr' method for a more detailed string representation.
+2. The program then defines the test_money_operations function defining three instances of money and testing addition subtraction and multiplication values and printing the test result.
+3. The program then calls the test_money_operations()
+
+GitHub repo link: https://github.com/vrk210/COP2373repo
