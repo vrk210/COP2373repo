@@ -1,0 +1,20 @@
+Vivek Kondapalli 7-21-2024
+
+This program determines the hypotenuse of a right triangle given the nearest angle, in degrees, and the length of the adjacent side.
+
+Variables Created:
+angle_degrees
+Adjacent
+angle_radians
+Hypotenuse
+
+Functions Created:
+calculate_hypotenuse
+Main
+
+Program Steps:
+1. The program prompts the user for both the nearest angle and the length of the adjacent side.
+2. The program converts the angle from degrees to radians then uses the formula: hypotenuse/cos(theta) to calculate the hypotenuse
+3. The program then outputs the hypotenuse.
+
+GitHub repo link: https://github.com/vrk210/COP2373repo
